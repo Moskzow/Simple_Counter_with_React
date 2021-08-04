@@ -9,7 +9,19 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import Home from "./component/home.jsx";
+//import { App } from "./component/home.js";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+//ReactDOM.render(<App />, document.querySelector("#app"));
+
+import { Counter } from "./component/counter.js";
+
+let counter = 0;
+
+setInterval(function() {
+	ReactDOM.render(
+		<Counter seconds={counter} />,
+		document.getElementById("app")
+	);
+	counter += 1;
+}, 1000);

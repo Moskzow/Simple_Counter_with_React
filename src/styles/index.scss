@@ -11,3 +11,26 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.app{
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    height: 180px;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 10px
+}
+.box{
+    display: inline-block;
+    height: 150px;
+    background-color: #0e0e0e;
+    border-radius: 10px
+}
+.icon{
+    width: 140px
+}
+.counter{
+    width: 100px;
+    margin-left: 10px
+}
